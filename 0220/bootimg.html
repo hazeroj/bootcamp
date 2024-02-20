@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04_부트스트랩(이미지관련)</title>
+  <style>
+    img{max-width: 620px;}
+    .img-thumbnail{width: 200px;height:150px}
+  </style>
+  <!-- 부트스트랩 css서식 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- 부트스트랩 js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <h2>04_부트스트랩(이미지관련)</h2>
+
+  <img src="./images/airplane_74190-464.avif" alt="" ><br><br><br>
+  <br>
+  <h3>1. 모서리 둥글게  class='rounded'</h3>
+  <img src="./images/airplane_74190-464.avif" alt="" class="rounded"><br>
+  <br>
+  <h3>2. 모서리 둥글게 하여 원모양으로  class='rounded-circle'</h3>
+  <img src="./images/San Diego, California road.jpg" alt="" class="rounded-circle"><br>
+  <br>
+  <h3>3. 이미지를 썸내일 이미지처럼 보이게</h3>
+  <img src="./images/1920_solaceinsolo1.jpg" alt="" class="img-thumbnail">
+  <img src="./images/1920_solaceinsolo1.jpg" alt="" class="img-thumbnail">
+  <img src="./images/1920_solaceinsolo1.jpg" alt="" class="img-thumbnail">
+  <img src="./images/1920_solaceinsolo1.jpg" alt="" class="img-thumbnail">
+
+  <p> .img-thumbnail : border, padding, border-radius 속성값 사용</p>
+
+  <h3> 4. 이미지와 문자를 사용하여 콘텐츠 제작시 figcaption, figure</h3>
+  <figure>
+    <img src="./images/San Diego, California road.jpg" alt="" class="img-fluid">
+    <figcaption>이미지 설명문구</figcaption>
+  </figure>
+
+  <p>이미지를 반응형으로 동작하는 클래스 class="img-fluid" 적용시 width:100%; height:auto; 속성이 자동으로 들어감</p>
+  <p>부모의 크기가 변하면 이미지 크기도 같이 반응</p>
+</body>
+</html>
